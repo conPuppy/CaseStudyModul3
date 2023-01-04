@@ -64,7 +64,7 @@
                        class="bg-gray-200 mb-2 shadow-none dark:bg-gray-800"
                        style="border: 1px solid #d3d5d8 !important;"
                        name="username">
-                <input type="text" placeholder="Password" class="bg-gray-200 mb-2 shadow-none dark:bg-gray-800"
+                <input type="password" placeholder="Password" class="bg-gray-200 mb-2 shadow-none dark:bg-gray-800"
                        style="border: 1px solid #d3d5d8 !important;"
                        name="password">
                 <div class="flex justify-between my-4">

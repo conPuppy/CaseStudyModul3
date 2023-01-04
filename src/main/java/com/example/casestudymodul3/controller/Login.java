@@ -15,7 +15,7 @@ import java.io.IOException;
 @WebServlet(urlPatterns = "/login")
 public class Login extends HttpServlet {
     LoginService loginService = new LoginService();
-   public static Account account;
+    public static Account account;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -28,6 +28,10 @@ public class Login extends HttpServlet {
                     break;
                 case "error2":
                     mess = "Account does not exist";
+                    req.setAttribute("mess", mess);
+                    break;
+                case "error3":
+                    mess = "Your account bloked";
                     req.setAttribute("mess", mess);
                     break;
             }
@@ -43,13 +47,15 @@ public class Login extends HttpServlet {
         Account account1 = loginService.checklogin(username);
 
         if (account1 != null) {
-            if (password.equals(loginService.checkpass(username))) {
+            if (account1.getIdstatus() == 2) {
+                resp.sendRedirect("/login?mess=error3");
+            } else if (password.equals(loginService.checkpass(username))) {
                 if (!username.equals("adminn")) {
                     HttpSession session = req.getSession();
                     session.setAttribute("account", account1);
                     resp.sendRedirect("/post");
                     account = account1;
-                }else {
+                } else {
                     HttpSession session = req.getSession();
                     session.setAttribute("account", account1);
                     resp.sendRedirect("/adminpost");
