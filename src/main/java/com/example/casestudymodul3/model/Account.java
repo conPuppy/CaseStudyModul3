@@ -11,6 +11,15 @@ public class Account {
     private int idroles;
     private int idstatus;
     private String avatarurl;
+    private int likecount;
+//idAccounts,username,img,likecount
+
+    public Account(int idaccount, String username, String avatarurl, int likecount) {
+        this.idaccount = idaccount;
+        this.username = username;
+        this.avatarurl = avatarurl;
+        this.likecount = likecount;
+    }
 
     public Account(int idaccount, String username, int idstatus, String avatarurl) {
         this.idaccount = idaccount;
@@ -30,14 +39,13 @@ public class Account {
         this.avatarurl = avatarurl;
     }
 
-    public Account(int idaccount, String username, String password, String email, String phonenumber, String address, int idroles, int idstatus, String avatarurl) {
+    public Account(int idaccount, String username, String password, String email, String phonenumber, String address,int idstatus, String avatarurl) {
         this.idaccount = idaccount;
         this.username = username;
         this.password = password;
         this.email = email;
         this.phonenumber = phonenumber;
         this.address = address;
-        this.idroles = idroles;
         this.idstatus = idstatus;
         this.avatarurl = avatarurl;
     }
@@ -62,6 +70,7 @@ public class Account {
     public Account() {
     }
 
+
     public Account(int idAccounts, String username, String avatar) {
         this.idaccount = idAccounts;
         this.username = username;
@@ -75,6 +84,26 @@ public class Account {
         this.phonenumber = phonenumber;
         this.address = address;
         this.avatarurl = avatarurl;
+    }
+
+    public Account(int id, String username, String password, String email, String phone, String address, int idroles, int idstatus, String avatarurl) {
+        this.idaccount = id;
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.phonenumber = phone;
+        this.address = address;
+        this.idstatus = idstatus;
+        this.idroles = idroles;
+        this.avatarurl = avatarurl;
+    }
+
+    public int getLikecount() {
+        return likecount;
+    }
+
+    public void setLikecount(int likecount) {
+        this.likecount = likecount;
     }
 
     public int getIdaccount() {

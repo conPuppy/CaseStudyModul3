@@ -5,6 +5,7 @@ import com.example.casestudymodul3.model.Post;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class PostDAO {
@@ -96,6 +97,28 @@ public class PostDAO {
             throw new RuntimeException(e);
         }
 
+    }
+    public static List<Post> showpostbyusername(int idaccounts) {
+        List<Post> postsbyusname = new ArrayList<>();
+        String selectAllPost = "SELECT* from posts  WHERE idaccounts = "+idaccounts;
+        Connection connection = ConnectionMySql.getConnection();
+        try {
+            Statement statement = connection.createStatement();
+
+            ResultSet rs = statement.executeQuery(selectAllPost);
+            while (rs.next()) {
+                int idPost = rs.getInt("idposts");
+
+                String content = rs.getString("content");
+                String img = rs.getString("img");
+                String time = rs.getString("time");
+
+                postsbyusname.add(new Post(content, img, time, idPost));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return postsbyusname;
     }
     public Post findPostById(int id) {
         String sql = "select posts.idPosts, posts.img, posts.content, Accounts.idAccounts, Accounts.username, posts.time from Posts join accounts on posts.idAccounts = accounts.idaccounts where idPosts ="+id;

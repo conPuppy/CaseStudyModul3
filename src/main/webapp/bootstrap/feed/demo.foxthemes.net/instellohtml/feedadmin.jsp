@@ -124,9 +124,9 @@
             <span> Trending </span> </a>
         </li>
         <li>
-          <a href="/bootstrap/feed/demo.foxthemes.net/instellohtml/market.jsp">
+          <a href="/Show">
             <i class="uil-store"></i>
-            <span> Marketplace </span> </a>
+            <span> Account Management </span> </a>
         </li>
         <li>
           <a href="/bootstrap/feed/demo.foxthemes.net/instellohtml/setting.jsp">
@@ -209,15 +209,6 @@
                              mr-1 opacity-90 text-xl uilus-circle"></ion-icon>
             Upload
           </a>
-
-          <a href="#"
-             class="bg-pink-500 flex font-bold hidden hover:bg-pink-600 hover:text-white inline-block items-center lg:block max-h-10 mr-4 px-4 py-2 rounded shado text-white">
-            <ion-icon name="add-circle" class="-mb-1
-                             mr-1 opacity-90 text-xl uilus-circle"></ion-icon>
-            Upload
-          </a>
-
-
 
           <!-- upload dropdown box -->
           <div uk-dropdown="pos: top-right;mode:click ; animation: uk-animation-slide-bottom-small"

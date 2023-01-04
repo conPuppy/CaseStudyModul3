@@ -27,4 +27,7 @@ public class PostService {
         postDAO.delete(id);
     }
     public static Post findPostById(int id) { return postDAO.findPostById(id); }
+    public static List<Post> showPostByUsername(int idaccounts) {
+        return   PostDAO.showpostbyusername(idaccounts);
+    }
 }

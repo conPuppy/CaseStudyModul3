@@ -1,6 +1,7 @@
 package com.example.casestudymodul3.model;
 
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 public class Post {
     private int idPost;
@@ -70,6 +71,13 @@ public class Post {
         this.content = noidung;
         this.time = time;
         this.avatarurl = avatarurl;
+    }
+
+    public Post( String username, String img, String content,int idPost) {
+        this.idPost = idPost;
+        this.username = username;
+        this.img = img;
+        this.content = content;
     }
 
 //    public Post(String username, String img, String content) {
