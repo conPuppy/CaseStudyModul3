@@ -5,33 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e270c27b-d170-4986-8542-f62eb2b68e7e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/DAO/ForgotDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/DAO/LoginDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/DAO/RegisterDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/controller/Feed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/controller/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/controller/Logout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/controller/Register.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/controller/ResetPass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/service/ForgotService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/service/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/service/RegisterSevice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap/feed/demo.foxthemes.net/instellohtml/notice.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap/feed/demo.foxthemes.net/instellohtml/resetpass.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/DAO/AccountDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/controller/SearchUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap/feed/demo.foxthemes.net/instellohtml/searchprofile.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/DAO/AccountDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/DAO/PostDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/DAO/PostDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/controller/CreatePostServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/controller/CreatePostServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/controller/MyPostServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/controller/MyPostServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/controller/PostServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/controller/PostServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/model/Accounts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/model/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/service/PostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/DAO/ForgotDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/DAO/ForgotDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/DAO/LoginDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/DAO/LoginDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/DAO/RegisterDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/DAO/RegisterDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/controller/Feed.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/model/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap/feed/demo.foxthemes.net/instellohtml/feed.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap/feed/demo.foxthemes.net/instellohtml/feed.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap/feed/demo.foxthemes.net/instellohtml/form-login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap/feed/demo.foxthemes.net/instellohtml/form-login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap/feed/demo.foxthemes.net/instellohtml/form-register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap/feed/demo.foxthemes.net/instellohtml/form-register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bootstrap/feed/demo.foxthemes.net/instellohtml/myprofile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap/feed/demo.foxthemes.net/instellohtml/myprofile.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +48,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -91,27 +76,27 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/taphuonglinh/Desktop/CaseStudy-Modul3/src/main/webapp/bootstrap/feed/demo.foxthemes.net/instellohtml",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/taphuonglinh/Desktop/CaseStudy-Modul3/src/main/webapp/bootstrap/feed/demo.foxthemes.net/instellohtml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/bootstrap/feed/demo.foxthemes.net/instellohtml" />
@@ -311,7 +296,8 @@
       <workItem from="1672630314291" duration="13610000" />
       <workItem from="1672652187456" duration="584000" />
       <workItem from="1672654646022" duration="19305000" />
-      <workItem from="1672729703426" duration="14085000" />
+      <workItem from="1672729703426" duration="30365000" />
+      <workItem from="1672799527748" duration="1066000" />
     </task>
     <servers />
   </component>
@@ -328,16 +314,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/casestudymodul3/DAO/PostDAO.java</url>
-          <line>69</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

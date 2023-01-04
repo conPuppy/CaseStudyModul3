@@ -12,6 +12,13 @@ public class Account {
     private int idstatus;
     private String avatarurl;
 
+    public Account(int idaccount, String username, int idstatus, String avatarurl) {
+        this.idaccount = idaccount;
+        this.username = username;
+        this.idstatus = idstatus;
+        this.avatarurl = avatarurl;
+    }
+
     public Account(String username, String password, String email, String phonenumber, String address, int idroles, int idstatus, String avatarurl) {
         this.username = username;
         this.password = password;
@@ -53,6 +60,12 @@ public class Account {
     }
 
     public Account() {
+    }
+
+    public Account(int idAccounts, String username, String avatar) {
+        this.idaccount = idAccounts;
+        this.username = username;
+        this.avatarurl = avatar;
     }
 
     public int getIdaccount() {

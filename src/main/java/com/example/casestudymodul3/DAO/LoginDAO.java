@@ -8,9 +8,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class LoginDAO {
-    private Connection connection = ConnectionMySql.getConnection();
     public Account checklogin(String username){
         String sql = "select * from accounts where username =?";
+        Connection connection = ConnectionMySql.getConnection();
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1,username);
@@ -33,6 +33,7 @@ public class LoginDAO {
 
     public String checkpass(String username){
         String sql = "select pasword from accounts where username=?";
+        Connection connection = ConnectionMySql.getConnection();
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1,username);

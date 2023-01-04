@@ -8,10 +8,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class ForgotDAO {
-    private Connection connection = ConnectionMySql.getConnection();
     private Account account = new Account();
     public Account finduser(String username){
         String sql = "SELECT * from accounts WHERE username = ?";
+        Connection connection = ConnectionMySql.getConnection();
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1,username);
@@ -33,6 +33,7 @@ public class ForgotDAO {
     }
     public boolean updatepass(Account account1){
         String sql = "UPDATE casemodul3.accounts SET pasword = ? WHERE username = ?";
+        Connection connection = ConnectionMySql.getConnection();
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1,account1.getPassword());
