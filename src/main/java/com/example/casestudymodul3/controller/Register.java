@@ -56,6 +56,7 @@ public class Register extends HttpServlet {
         String email = req.getParameter("email");
         String phonenumber = req.getParameter("phonenumber");
         String address = req.getParameter("address");
+        String avatarurl = req.getParameter("avatarurl");
 
 
         if (registerSevice.checkemail(email) || registerSevice.checkphonenumber(phonenumber)) {
@@ -64,7 +65,7 @@ public class Register extends HttpServlet {
             if (registerSevice.checkacc(username)) {
                 resp.sendRedirect("/register?mess=error1");
             } else if (password.equals(repass)) {
-                registerSevice.Adduser(new Account(username, password, email, phonenumber, address));
+                registerSevice.Adduser(new Account(username, password, email, phonenumber, address,avatarurl));
                 resp.sendRedirect("/bootstrap/feed/demo.foxthemes.net/instellohtml/notice.jsp");
             } else {
                 resp.sendRedirect("/register?mess=error3");

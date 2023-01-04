@@ -132,7 +132,7 @@
                         <span> Marketplace </span> </a>
                 </li>
                 <li>
-                    <a href="/bootstrap/feed/demo.foxthemes.net/instellohtml/setting.jsp">
+                    <a href="/setting">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                              stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -143,11 +143,8 @@
                         <span> Settings </span>
                     </a>
                     <ul>
-                        <li><a href="/bootstrap/feed/demo.foxthemes.net/instellohtml/setting.jsp">General </a></li>
-                        <li><a href="/bootstrap/feed/demo.foxthemes.net/instellohtml/setting.jsp"> Account setting </a>
+                        <li><a href="/setting"> Account setting </a>
                         </li>
-                        <li><a href="/bootstrap/feed/demo.foxthemes.net/instellohtml/setting.jsp">Billing <span
-                                class="nav-tag">3</span> </a></li>
                     </ul>
                 </li>
                 <li>

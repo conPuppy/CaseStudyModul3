@@ -44,10 +44,18 @@ public class Login extends HttpServlet {
 
         if (account1 != null) {
             if (password.equals(loginService.checkpass(username))) {
-                HttpSession session = req.getSession();
-                session.setAttribute("account", account1);
-                resp.sendRedirect("/post");
-                account = account1;
+                if (!username.equals("adminn")) {
+                    HttpSession session = req.getSession();
+                    session.setAttribute("account", account1);
+                    resp.sendRedirect("/post");
+                    account = account1;
+                }else {
+                    HttpSession session = req.getSession();
+                    session.setAttribute("account", account1);
+                    resp.sendRedirect("/adminpost");
+
+
+                }
             } else {
                 resp.sendRedirect("/login?mess=error1");
             }

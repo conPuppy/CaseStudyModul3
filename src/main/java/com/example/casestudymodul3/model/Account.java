@@ -68,6 +68,15 @@ public class Account {
         this.avatarurl = avatar;
     }
 
+    public Account(String username, String password, String email, String phonenumber, String address, String avatarurl) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.phonenumber = phonenumber;
+        this.address = address;
+        this.avatarurl = avatarurl;
+    }
+
     public int getIdaccount() {
         return idaccount;
     }
